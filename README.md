@@ -6,6 +6,11 @@ Request实现的SHMTU教务系统抢课辅助软件
 
 This project can not be used for commercial purposes, it is intended solely for learning and communication. Do not use it for illegal purposes. The author is not responsible for any consequences that arise from its use.
 # 用法 Usage
+
+打包好的exe安装包在release里，可以点击下方链接下载，直接安装使用
+
+https://github.com/EricHongXDD/smu_course_election_helper/releases/download/V1.0/Smu.Course.Election.Helper_Setup_1.0.exe
+
 ## Cookies：登录SHMTU教务系统或数字平台获取到的Cookies
 https://jwxt.shmtu.edu.cn
 
