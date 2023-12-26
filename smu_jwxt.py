@@ -4,7 +4,8 @@ import lxml
 import lxml.html
 import requests
 from PyQt5.QtCore import QStringListModel, QThread, pyqtSignal
-from PyQt5.QtWidgets import QWidget, QApplication
+from PyQt5.QtGui import QFontDatabase
+from PyQt5.QtWidgets import QWidget, QApplication, QDesktopWidget
 from datetime import datetime
 # Form implementation generated from reading ui file 'smu_jwxt.ui'
 #
@@ -135,8 +136,17 @@ class Ui_MessageBox(QWidget, Ui_Form_MessageBox):
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(960, 535)
-        Form.setStyleSheet("font-family: 57 12pt \"Alibaba PuHuiTi\";")
+        # Form.resize(960, 535)
+        screen = QDesktopWidget().screenGeometry();  # 获取屏幕大小
+        width = screen.width()  # 宽
+        height = screen.height()  # 窄
+        Form.resize(width / 2, height / 2)
+
+        # 加载字体
+        fontId = QFontDatabase.addApplicationFont("res/Alibaba-PuHuiTi-Medium.ttf")
+        fontFamily = QFontDatabase.applicationFontFamilies(fontId)[0]
+
+        Form.setStyleSheet("font-family: 57 12pt \"Alibaba PuHuiTi Medium\";")
         self.tabWidget = QtWidgets.QTabWidget(Form)
         self.tabWidget.setGeometry(QtCore.QRect(170, 70, 721, 401))
         self.tabWidget.setStyleSheet("QTabWidget::pane{\n"
@@ -154,7 +164,7 @@ class Ui_Form(object):
 "\n"
 "color: white;\n"
 "\n"
-"font: 57 12pt \"Alibaba PuHuiTi\";\n"
+"font: 57 12pt \"Alibaba PuHuiTi Medium\";\n"
 "\n"
 "border: 0px solid;\n"
 "\n"
@@ -169,7 +179,7 @@ class Ui_Form(object):
 "min-height:25px;\n"
 "color: white;\n"
 "\n"
-"font: 57 13pt \"Alibaba PuHuiTi\";\n"
+"font: 57 13pt \"Alibaba PuHuiTi Medium\";\n"
 "\n"
 "border: 0px solid;\n"
 "\n"
@@ -185,41 +195,41 @@ class Ui_Form(object):
         self.label_12 = QtWidgets.QLabel(self.tab_1)
         self.label_12.setGeometry(QtCore.QRect(0, 10, 91, 41))
         self.label_12.setStyleSheet("color: white;\n"
-"font: 75 12pt \"Alibaba PuHuiTi\";")
+"font: 75 12pt \"Alibaba PuHuiTi Medium\";")
         self.label_12.setObjectName("label_12")
         self.label_8 = QtWidgets.QLabel(self.tab_1)
         self.label_8.setGeometry(QtCore.QRect(0, 130, 91, 41))
         self.label_8.setStyleSheet("color: white;\n"
-"font: 75 12pt \"Alibaba PuHuiTi\";")
+"font: 75 12pt \"Alibaba PuHuiTi Medium\";")
         self.label_8.setObjectName("label_8")
         self.label_10 = QtWidgets.QLabel(self.tab_1)
         self.label_10.setGeometry(QtCore.QRect(330, 130, 81, 41))
         self.label_10.setStyleSheet("color: white;\n"
-"font: 75 12pt \"Alibaba PuHuiTi\";")
+"font: 75 12pt \"Alibaba PuHuiTi Medium\";")
         self.label_10.setObjectName("label_10")
         self.lineEdit_6 = QtWidgets.QLineEdit(self.tab_1)
         self.lineEdit_6.setGeometry(QtCore.QRect(90, 10, 631, 41))
         self.lineEdit_6.setStyleSheet("color: white;\n"
-"font: 75 12pt \"Alibaba PuHuiTi\";\n"
+"font: 75 12pt \"Alibaba PuHuiTi Medium\";\n"
 "background-color: rgb(38, 43, 75);")
         self.lineEdit_6.setObjectName("lineEdit_6")
         self.lineEdit_5 = QtWidgets.QLineEdit(self.tab_1)
         self.lineEdit_5.setGeometry(QtCore.QRect(420, 130, 161, 41))
         self.lineEdit_5.setStyleSheet("color: white;\n"
-"font: 75 12pt \"Alibaba PuHuiTi\";\n"
+"font: 75 12pt \"Alibaba PuHuiTi Medium\";\n"
 "background-color: rgb(38, 43, 75);")
         self.lineEdit_5.setObjectName("lineEdit_5")
         self.lineEdit_7 = QtWidgets.QLineEdit(self.tab_1)
         self.lineEdit_7.setGeometry(QtCore.QRect(90, 130, 221, 41))
         self.lineEdit_7.setStyleSheet("color: white;\n"
-"font: 75 12pt \"Alibaba PuHuiTi\";\n"
+"font: 75 12pt \"Alibaba PuHuiTi Medium\";\n"
 "background-color: rgb(38, 43, 75);")
         self.lineEdit_7.setObjectName("lineEdit_7")
         self.pushButton_43 = QtWidgets.QPushButton(self.tab_1)
         self.pushButton_43.setGeometry(QtCore.QRect(600, 130, 121, 41))
         self.pushButton_43.setStyleSheet("QPushButton {    \n"
 "    color: white;\n"
-"    font: 57 12pt \"Alibaba PuHuiTi\";\n"
+"    font: 57 12pt \"Alibaba PuHuiTi Medium\";\n"
 "    border-image: url(:/button/button_unselected.png);\n"
 "}\n"
 "QPushButton:hover {\n"
@@ -234,12 +244,12 @@ class Ui_Form(object):
         self.label_11 = QtWidgets.QLabel(self.tab_1)
         self.label_11.setGeometry(QtCore.QRect(0, 70, 91, 41))
         self.label_11.setStyleSheet("color: white;\n"
-"font: 75 12pt \"Alibaba PuHuiTi\";")
+"font: 75 12pt \"Alibaba PuHuiTi Medium\";")
         self.label_11.setObjectName("label_11")
         self.lineEdit_8 = QtWidgets.QLineEdit(self.tab_1)
         self.lineEdit_8.setGeometry(QtCore.QRect(90, 70, 631, 41))
         self.lineEdit_8.setStyleSheet("color: white;\n"
-"font: 75 12pt \"Alibaba PuHuiTi\";\n"
+"font: 75 12pt \"Alibaba PuHuiTi Medium\";\n"
 "background-color: rgb(38, 43, 75);")
         self.lineEdit_8.setObjectName("lineEdit_8")
         self.VitsListView = QtWidgets.QListView(self.tab_1)
@@ -283,7 +293,7 @@ class Ui_Form(object):
         palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
         self.VitsListView.setPalette(palette)
         font = QtGui.QFont()
-        font.setFamily("57 12pt Alibaba PuHuiTi")
+        font.setFamily("57 12pt Alibaba PuHuiTi Medium")
         font.setPointSize(10)
         font.setBold(True)
         font.setWeight(75)
@@ -357,7 +367,7 @@ class Ui_Form(object):
         self.pushButton_4.setGeometry(QtCore.QRect(60, 230, 101, 41))
         self.pushButton_4.setStyleSheet("QPushButton {    \n"
 "    color: white;\n"
-"    font: 57 12pt \"Alibaba PuHuiTi\";\n"
+"    font: 57 12pt \"Alibaba PuHuiTi Medium\";\n"
 "    border-image: url(:/button/button_unselected.png);\n"
 "}\n"
 "QPushButton:hover {\n"
@@ -366,7 +376,7 @@ class Ui_Form(object):
 "}\n"
 "QPushButton:pressed {    \n"
 "    color: white;\n"
-"    font: 57 12pt \"Alibaba PuHuiTi\";\n"
+"    font: 57 12pt \"Alibaba PuHuiTi Medium\";\n"
 "    border-image: url(:/button/button_unselected.png);\n"
 "}\n"
 "border-image: url(:/button/button_unselected.png);")
@@ -375,7 +385,7 @@ class Ui_Form(object):
         self.pushButton_5.setGeometry(QtCore.QRect(60, 150, 101, 41))
         self.pushButton_5.setStyleSheet("QPushButton {    \n"
 "    color: white;\n"
-"    font: 57 12pt \"Alibaba PuHuiTi\";\n"
+"    font: 57 12pt \"Alibaba PuHuiTi Medium\";\n"
 "    border-image: url(:/button/button_unselected.png);\n"
 "}\n"
 "QPushButton:hover {\n"
@@ -384,7 +394,7 @@ class Ui_Form(object):
 "}\n"
 "QPushButton:pressed {    \n"
 "    color: white;\n"
-"    font: 57 12pt \"Alibaba PuHuiTi\";\n"
+"    font: 57 12pt \"Alibaba PuHuiTi Medium\";\n"
 "    border-image: url(:/button/button_unselected.png);\n"
 "}\n"
 "border-image: url(:/button/button_unselected.png);")
@@ -445,12 +455,12 @@ class Ui_Form(object):
     # 打开帮助文档
     def openHelpPage(self):
          # 使用默认浏览器打开网页
-        webbrowser.open("https://github.com/EricHongXDD/smu_course_selection_helper/blob/main/README.md")
+        webbrowser.open("https://github.com/EricHongXDD/smu_course_election_helper/blob/main/README.md")
 
     # 打开仓库界面
     def openGithubPage(self):
          # 使用默认浏览器打开网页
-        webbrowser.open("https://github.com/EricHongXDD/smu_course_selection_helper")
+        webbrowser.open("https://github.com/EricHongXDD/smu_course_election_helper")
 
     def set_listView_content(self):
         # 使用QStringListModel来设置listView的数据
