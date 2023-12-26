@@ -21,8 +21,12 @@ https://portal.shmtu.edu.cn
 
 ## ProfileId：选课课次ID
 
+访问教务系统首页 > 教学过程 > 选课：https://jwxt.shmtu.edu.cn/shmtu/stdElectCourse.action
+
 补退选开始前可以通过查看页面元素element（网页源代码），搜索stdElectCourse找到可用的ProfileId
- 
+
+选课开始后可点击操作中的进入选课>>>>得到当前页面链接
+
 如https://jwxt.shmtu.edu.cn/shmtu/stdElectCourse!defaultPage.action?electionProfile.id=1234
 
 则ProfileId=1234
