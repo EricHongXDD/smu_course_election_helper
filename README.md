@@ -29,7 +29,7 @@ https://portal.shmtu.edu.cn
 
 ## Lessonid：课程ID
  
-PC电脑端访问https://jwxt.shmtu.edu.cn/shmtu/teachTaskSearch!arrangeInfoList.action
+访问教务系统首页 > 信息查询 > 开课查询（公共）：https://jwxt.shmtu.edu.cn/shmtu/teachTaskSearch.action
 
 搜索到课程后，点击对应课程前方的课序号
 
