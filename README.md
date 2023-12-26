@@ -12,6 +12,9 @@ This project can not be used for commercial purposes, it is intended solely for 
 https://github.com/EricHongXDD/smu_course_election_helper/releases/download/V1.0/Smu.Course.Election.Helper_Setup_1.0.exe
 
 ## Cookies：登录SHMTU教务系统或数字平台获取到的Cookies
+
+注意，获取到的Cookies需要全部复制进去，不是只有框里预留的三项
+
 https://jwxt.shmtu.edu.cn
 
 https://portal.shmtu.edu.cn
