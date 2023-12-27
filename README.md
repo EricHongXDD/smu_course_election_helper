@@ -11,6 +11,7 @@ This project can not be used for commercial purposes, it is intended solely for 
 
 https://github.com/EricHongXDD/smu_course_election_helper/releases/download/V1.0/Smu.Course.Election.Helper_Setup_1.0.exe
 
+<img src="img/pic1.png" alt="pic1" style="zoom:100%;" />
 ## Cookies：登录SHMTU教务系统或数字平台获取到的Cookies
 
 注意，获取到的Cookies需要全部复制进去，不是只有框里预留的三项
@@ -18,6 +19,8 @@ https://github.com/EricHongXDD/smu_course_election_helper/releases/download/V1.0
 https://jwxt.shmtu.edu.cn
 
 https://portal.shmtu.edu.cn
+
+<img src="img/pic2.png" alt="pic2" style="zoom:100%;" />
 
 ## ProfileId：选课课次ID
 
@@ -31,6 +34,10 @@ https://portal.shmtu.edu.cn
 
 则ProfileId=1234
 
+<img src="img/pic5.png" alt="pic2" style="zoom:100%;" />
+
+<img src="img/pic6.png" alt="pic2" style="zoom:100%;" />
+
 ## Lessonid：课程ID
  
 访问教务系统首页 > 信息查询 > 开课查询（公共）：https://jwxt.shmtu.edu.cn/shmtu/teachTaskSearch.action
@@ -42,6 +49,10 @@ https://portal.shmtu.edu.cn
 得到的链接类似如：https://jwxt.shmtu.edu.cn/shmtu/courseTable!taskTable.action?lesson.id=212345
 
 则Lessonid=212345
+
+<img src="img/pic3.png" alt="pic2" style="zoom:100%;" />
+
+<img src="img/pic4.png" alt="pic2" style="zoom:100%;" />
 
 ## 间隔秒数：
 
